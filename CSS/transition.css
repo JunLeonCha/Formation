@@ -1,0 +1,98 @@
+body{
+  font-family: arial, sans-serif;
+  text-align: center;
+  perspective: 800px;
+  /*rest des marges*/
+  margin:0;
+}
+
+p{
+  font-size: 30px;
+}
+div{
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  border:2px solid black;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+/*etat normal*/
+#tri1{
+  background-color: orange;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+/*Lors du survol*/
+#tri1:hover{
+  background-color: blue;
+}
+#tri1:active{
+  background-color: red;
+}
+
+#tri2{
+  background-color: orange;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+#tri3{
+  background-color: orange;
+  transition-property: background-color, border;
+  transition-duration: 1s;
+}
+
+#tri4{
+  background-color: orange;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+#tri2:hover, #tri3:hover, #tri4:hover{
+  background-color: blue;
+  border: 5px solid red;
+  color:white;
+}
+
+.affichageBoite{
+  width: 30%;
+  height: 60px;
+  margin:20px auto;
+  border: 2px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px;
+  background-color: orange;
+  transition-property: all;
+  transition-duration: 2s;
+  background: url(../Media/kingdom-hearts-melody-of-memory-artwork-02.jpg);
+  background-size: 100%;
+  
+}
+#tr5{
+  transition-timing-function: ease;
+}
+#tr6{
+  transition-timing-function: ease-in;
+}
+#tr7{
+  transition-timing-function: ease-out;
+}
+#tr8{
+  transition-timing-function: ease-in-out;
+}
+#tr9{
+  transition-timing-function: linear;
+}
+#tr10{
+  transition-timing-function: cubic-bezier(0.6, 0, 1, 1);
+}
+#tr5:hover, #tr6:hover, #tr7:hover, #tr8:hover, #tr9:hover, #tr10:hover{
+  width: 50%;
+  background: url(../Media/gallery_45323_1604_775082.jpg);
+  border: 5px solid red;
+  color:white;
+}

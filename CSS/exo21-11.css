@@ -1,0 +1,15 @@
+body{
+    font-size: 3em;
+}
+
+@media screen and (min-width:1500px) {
+    body{
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width:900px){
+    .other{
+        font-size:1em;
+    }
+}

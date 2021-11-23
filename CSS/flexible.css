@@ -1,0 +1,114 @@
+.conteneur-flexible
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #0AD;
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.element-flexible
+{
+    flex: 1 1 20%;
+    background-color: rgb(18, 221, 0);
+    width: 40%;
+    border: 2px solid green;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.ligne{
+
+    flex-direction: column; /* Axe principal = axe horizontal */
+/* Conteneur flexible reverse */
+}
+.conteneur-flexible {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  background-color: #0ad; /*Bleu*/
+  border: 2px solid blue;
+  box-sizing: border-box;
+  margin: 20px 0px;
+}
+.element-flexible {
+  flex: 0 0 35%;
+  width: 25%;
+  height: 25%;
+  background-color: #0da; /*Vert*/
+  padding: 10px 0px;
+  text-align: center;
+  border: 2px solid green;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.ligne-reverse {
+  flex-flow: row-reverse-wrap;
+}
+.ligne
+{
+    flex-flow: row-wrap;
+}
+.omoins1 {
+  order: -1;
+}
+.o2 {
+  order: 2;
+}
+.o4 {
+  order: 4;
+}
+
+#conteneur{
+    display: flex;
+    background-color: grey;
+    border: 10px solid purple;
+    width: 300px;
+    height: 500px;
+    margin: 20% auto;
+    padding: 20px;
+    /*lepadding nous permettra de voir les débordements*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: center;
+
+}
+
+.affichageBox{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#element1{
+    background-color: orange;
+    
+}
+#element2{
+    background-color: blue;
+}
+#element3{
+    background-color: green;
+}
+#element4{
+    background-color: red;
+}
+#element5{
+    background-color: pink;
+    align-self: flex-end;
+    flex: auto;
+      transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.dernier{
+}
+
+.premier{
+}
